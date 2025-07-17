@@ -1,5 +1,23 @@
 import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
 
+const cardSwiper = new Swiper('.card', {
+  spaceBetween: 100,
+  slidesPerView: 1,
+  loop: true,
+
+  navigation: {
+    nextEl: '.card-next',
+    prevEl: '.card-prev',
+  },
+
+  pagination: {
+    bulletClass: 'card-bullet',
+    bulletActiveClass: 'card-bullet-active',
+    el: '.card-pagination',
+    clickable: true,
+  }
+})
+
 const reviewsSwiper = new Swiper('.reviews', {
   spaceBetween: 40,
   loop: true,
@@ -95,8 +113,8 @@ const popupClose = document.querySelector('.popup__close')
 
 document.addEventListener( 'click', (e) => {
 	const withinBoundaries = e.composedPath().includes(popupContent)
-  
-	if ( !withinBoundaries && e.target.getAttribute('id') !== 'order' && e.target.className !== 'burger') {
+
+	if ( !withinBoundaries && e.target.getAttribute('id') !== 'order' && popup.classList.contains('active')) {
 		popup.classList.remove('active')
     body.classList.remove('popup-mode')
 	}
