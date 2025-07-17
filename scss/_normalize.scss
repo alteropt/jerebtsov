@@ -1,0 +1,26 @@
+@import './variables';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $cFont;
+}
+
+button, input {
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}

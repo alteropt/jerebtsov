@@ -1,0 +1,656 @@
+.card {
+  padding: 120px 120px 80px;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 48px;
+
+  background-color: #F6F4EF;
+
+  @media(max-width: 1440px) {
+    padding: 64px 64px 40px;  
+    gap: 32px;
+  }
+
+  @media(max-width: 1024px) {
+    padding: 48px 48px 32px;
+    gap: 24px;  
+  }
+
+  @media(max-width: 768px) {
+    padding: 40px 40px 28px;
+  }
+
+  &__slogan {
+    text-align: center;
+    font-size: 60px;
+    color: $cSecondary;
+    opacity: 0.75;
+
+    @media(max-width: 1440px) {
+      font-size: 48px;
+    }
+
+    @media(max-width: 1024px) {
+      font-size: 40px;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-size: 72px;
+
+    @media(max-width: 1440px) {
+      font-size: 52px;
+      margin-top: 0;
+    }
+
+    @media(max-width: 1024px) {
+      font-size: 42px;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  &__interact {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @media(max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 12px;
+    } 
+  }
+
+  &__price {
+    font-size: 32px;
+
+    @media(max-width: 1440px) {
+      font-size: 24px;  
+    } 
+
+    @media(max-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100px;
+  font-size: 18px;
+  padding: 16px 24px;
+
+  font-weight: bold;
+  color: $cFont;
+
+  background-color: $cWhite;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+
+  transition: color .2s linear,
+  background-color .2s linear;
+
+  &.black {
+    background-color: $cFont;
+    color: $cWhite;
+
+    &:hover, &:focus {
+      background-color: $cWhite;
+      color: $cFont;
+    }
+  }
+
+  &.stroke {
+    background-color: transparent;
+    border: 1px solid $cFont;
+  }
+
+  &:hover, &:focus {
+    background-color: $cFont;
+    color: $cWhite;
+  }
+
+  @media(max-width: 1024px) {
+    font-size: 16px;
+    padding: 16px 40px;
+  }
+}
+
+.review {
+  padding: 32px;
+  border: 2px solid $cFont;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media(max-width: 1024px) {
+    gap: 20px;  
+  }
+
+  &__author {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__avatar {
+    width: 48px;
+    height: 48px; 
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-bottom: 4px;   
+    font-size: 32px; 
+
+    @media(max-width: 1024px) {
+      font-size: 28px;
+    }
+  }
+
+  &__prof {
+    color: #8594A6;
+    font-size: 20px;
+  }
+
+  &__desc {
+    @media(max-width: 1024px) {
+      font-size: 20px;  
+    }
+  }
+}
+
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 48px;
+  
+  letter-spacing: 5px;
+
+  text-transform: uppercase;
+
+  @media(max-width: 1024px) {
+    font-size: 40px;
+    margin-bottom: 40px;  
+  }
+
+  @media(max-width: 768px) {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+section {
+  padding: 80px 0;
+
+  &.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media(max-width: 1440px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    } 
+
+    @media(max-width: 1024px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  @media(max-width: 1440px) {
+    padding: 60px 0;  
+  }
+
+  @media(max-width: 1024px) {
+    padding: 40px 0;  
+  }
+}
+
+.publications {
+  display: flex;
+  gap: 24px;
+
+  margin-bottom: 52px;
+
+  border-radius: 24px;
+
+  @media(max-width: 768px) {
+    gap: 0;
+  }
+  
+  div {
+    border-radius: 24px;
+    height: 750px;
+    flex-basis: 30%;
+    overflow: hidden;
+    transition: flex-basis .2s linear;
+
+    @media(max-width: 1440px) {
+      height: 600px;  
+    }
+
+    @media(max-width: 1024px) {
+      height: 450px;  
+    }
+    
+    @media(max-width: 768px) {
+      flex-basis: inherit;
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+@media(max-width: 1440px) and (min-width: 768px) {
+  .publications div:hover {
+    flex-basis: 55%;
+  }
+
+  .publications div:hover ~ div {
+    flex-basis: 15%;
+  }
+
+  .publications div:has(~ div:hover) {
+    flex-basis: 15%;
+  }
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+  @media(max-width: 1024px) {
+    gap: 12px;
+  }
+
+  &__question {
+    cursor: pointer;
+    width: 100%;
+    background-color: $cWhite;
+    padding: 32px;
+    padding-bottom: 8px;
+    border-radius: 24px;
+
+    @media(max-width: 1440px) {
+      padding: 24px;  
+      padding-bottom: 8px;
+    }
+
+    @media(max-width: 1024px) {
+      padding: 16px 24px;
+      padding-bottom: 8px;
+    }
+
+    &:hover .faq__btn img {
+      opacity: 1;
+    }
+    
+    .faq__desc {
+      display: none !important;
+      transition: max-height .2s linear;
+      font-size: 20px;
+
+      @media(max-width: 768px) {
+        font-size: 14px;
+      }
+
+      &.design {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        >div {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          flex-basis: 48%;
+
+          @media(max-width: 1024px) {
+            flex-basis: 100%;
+          }
+        }
+      }
+      &-title {
+        font-weight: normal;
+        font-size: 32px;
+
+        @media(max-width: 1024px) {
+          font-size: 24px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+
+      &-text {
+        flex-basis: 48%;
+
+        @media(max-width: 1024px) {
+          flex-basis: 100%;
+        }
+      }
+    }
+    
+    &.active {
+      .faq__desc {
+        display: flex !important;
+        padding-bottom: 20px;
+
+        @media(max-width: 1024px) {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  &__question-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @media(max-width: 1440px) {
+      margin-bottom: 16px;  
+    }
+
+    @media(max-width: 1024px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+
+    @media(max-width: 1440px) {
+      font-size: 24px;  
+    }
+
+    @media(max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    img { 
+      transition: transform .2s linear,
+      opacity .2s linear;
+      transform-origin: center;
+      opacity: 0.5;
+      width: 52px;
+    }
+
+    &.active {
+      img {
+        transform: rotate(135deg);
+      }
+    }
+
+    @media(max-width: 768px) {
+      flex-basis: 15%;
+      align-self: flex-end;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  color: #000;
+  opacity: 0.5;
+
+  a {
+    color: #000;
+    opacity: .5;
+    transition: opacity .2s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.burger {
+  width: 40px;
+  height: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  z-index: 1001;
+
+  display: none;
+
+  @media(max-width: 768px) {
+    display: block;
+  }
+  
+  span {
+    position: absolute;
+    width: 36px;
+    height: 3px;
+
+    background-color: $cFont;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::before, &::after {
+      content: '';
+      display: block;
+
+      position: absolute;
+      width: 36px;
+      height: 100%;
+      left: 0;
+
+      background-color: $cFont;
+    }
+
+    &::before {
+      top: -11px;
+    }
+
+    &::after {
+      bottom: -11px;
+    }
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+
+  padding: 0;
+  border-radius: 24px;
+
+  user-select: none;
+
+  &__name {
+    margin-top: 5px;
+    font-size: 24px;
+    z-index: 2;
+    font-weight: 700;
+
+    transition: opacity .2s linear;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 16px;  
+    }
+  }
+
+  &__price {
+    font-size: 16px;
+    z-index: 2;
+    opacity: 0.7;
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    z-index: 2;
+
+    .btn {
+
+      @media(max-width: 768px) {
+        width: max-content;
+        flex-basis: 47%;
+        padding: 10px;
+        font-size: 12px;
+      }
+    }
+
+    @media(max-width: 768px) {
+      flex-wrap: nowrap;
+      gap: 8px;
+    }
+  }
+
+  &__background {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.popup {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1001;
+
+  &.active {
+    display: flex;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $cWhite;
+    border-radius: 24px;
+    padding: 48px 64px;
+    gap: 32px;
+
+    width: 35%;
+
+    @media(max-width: 1024px) {
+      width: 60%;
+      padding: 32px 48px;
+    }
+
+    @media(max-width: 525px) {
+      width: 90%;
+      padding: 24px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-height: 50vh;
+    overflow-y: auto;
+    text-align: center;
+    align-items: center;
+
+
+    input {
+      width: 100%;
+      padding: 12px 20px;
+      border-radius: 24px;
+      border: 1px solid $cFont;
+      font-size: 20px;
+      outline: none;
+
+      &::placeholder {
+        color: $cFont;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    &::before, &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      
+      display: block;
+      width: 30px;
+      height: 1px;
+
+      background-color: $cFont;
+    }
+
+    &::before {
+      top: 15px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      bottom: 16px;
+      transform: rotate(135deg);
+    }
+  }
+}
