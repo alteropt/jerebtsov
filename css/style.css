@@ -431,6 +431,12 @@ section.container {
   flex-wrap: wrap;
 }
 
+@media(max-width: 768px) {
+  .faq__textures {
+    justify-content: center;
+  }
+}
+
 .faq__texture {
   flex-basis: 23%;
 
@@ -446,7 +452,7 @@ section.container {
 }
 @media(max-width: 768px) {
   .faq__texture {
-    flex-basis: 48%;
+    flex-basis: 47%;
   }
 }
 

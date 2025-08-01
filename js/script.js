@@ -163,14 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
             prevEl: '.more-prev'
         }
     });
-
-    // const texturesZoomTriggers = document.querySelectorAll('.zoom-texture-btn')
-    // texturesZoomTriggers.forEach(texturesZoomTrigger => {
-    //   texturesZoomTrigger.addEventListener('click', () => {
-    //     texturesZoomTrigger.parentNode.parentNode.parentNode.classList.toggle('active')
-    //     body.classList.toggle('popup-mode')
-    //   })
-    // })
+    
     lightGallery(document.querySelector('.faq__textures', {
       selector: ".faq__texture-img"
     }))
