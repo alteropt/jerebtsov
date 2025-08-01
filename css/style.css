@@ -296,6 +296,9 @@ section.container {
   padding-bottom: 8px;
   border-radius: 24px;
 }
+.faq__question.faq__clickable-content {
+  cursor: auto;
+}
 @media (max-width: 1440px) {
   .faq__question {
     padding: 24px;
@@ -373,6 +376,7 @@ section.container {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 32px;
+  cursor: pointer;
 }
 @media (max-width: 1440px) {
   .faq__question-head {
@@ -418,6 +422,76 @@ section.container {
     display: flex;
     justify-content: flex-end;
   }
+}
+
+.faq__textures {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.faq__texture {
+  flex-basis: 23%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media(max-width: 1024px) {
+  .faq__texture {
+    flex-basis: 31%;
+  }
+}
+@media(max-width: 768px) {
+  .faq__texture {
+    flex-basis: 48%;
+  }
+}
+
+.faq__texture-more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__texture-more >h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.faq__texture-more >div {
+  display: flex;
+  gap: 16px;
+}
+
+.faq__texture-more >div * {
+  transition: opacity .2s linear;
+}
+
+.faq__texture-more >div *:hover {
+  opacity: 0.8;
+}
+
+.faq__texture-img {
+  height: 150px;
+  overflow: hidden;
+  user-select: none;
+}
+
+.faq__texture-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.zoom-texture-btn {
+  cursor: pointer;
+
+  outline: none;
+  border: 0;
+  background: transparent;
 }
 
 .breadcrumbs {
@@ -532,11 +606,9 @@ section.container {
 
 .popup {
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -1099,7 +1171,8 @@ footer * {
     width: 100%;
   }
 }
-.more-slider .more-slide {
+.more-slider .more-slide,
+.swiper-wrapper .more-slide {
   border-radius: 24px;
   position: relative;
   overflow: hidden;
@@ -1167,6 +1240,7 @@ footer * {
   .more__info {
     flex-basis: auto;
     margin-top: 0;
+    width: 100%;
   }
 }
 .more__title {
