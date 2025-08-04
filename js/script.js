@@ -146,17 +146,18 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     })
 
+    const productThumbsSwiper = new Swiper('.more__tabs', {
+        spaceBetween: 20,
+        slidesPerView: 3,
+        loop: true,
+    })
 
     const productSwiper = new Swiper('.more__picture', {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 12,
-        pagination: {
-            el: '.more__tabs',
-            bulletClass: 'more__tab',
-            bulletActiveClass: 'more__tab-active',
-            type: 'bullets',
-            clickable: true,
+        thumbs: {
+            swiper: productThumbsSwiper
         },
         navigation: {
             nextEl: '.more-next',
@@ -167,6 +168,8 @@ document.addEventListener('DOMContentLoaded', function() {
     lightGallery(document.querySelector('.faq__textures', {
       selector: ".faq__texture-img"
     }))
+
+    lightGallery(document.querySelector('.more-gallery'))
 
     document.querySelector('.faq__texture-download').addEventListener('click', (e) => {
       e.stopPropagation()
