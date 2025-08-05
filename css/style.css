@@ -908,6 +908,10 @@ header nav {
   }
 }
 
+.card .swiper-wrapper {
+  align-items: center;
+}
+
 .intro__video {
   position: absolute;
   top: 0;
