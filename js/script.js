@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const cardSwiper = new Swiper('.card', {
         spaceBetween: 100,
         slidesPerView: 1,
-        loop: true,
 
         navigation: {
             nextEl: '.card-next',
@@ -14,11 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
             bulletActiveClass: 'card-bullet-active',
             el: '.card-pagination',
             clickable: true,
+        },
+          on: {
+            slideChange: function () {
+                if(this.activeIndex !== 0) {
+                    document.querySelector('.intro__video').style.display = 'none';
+                } else {
+                    document.querySelector('.intro__video').style.display = 'block';
+                }
+            },
         }
     })
 
     const reviewsSwiper = new Swiper('.reviews', {
-        spaceBetween: 40,
+        spaceBetween: 20,
         loop: true,
         slidesPerView: 1.3,
         autoplay: true,
@@ -33,7 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
             },
 
             1024: {
-                slidesPerView: 2.2
+                slidesPerView: 2.2,
+                spaceBetween: 40
             }
         }
     })
@@ -165,17 +174,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    lightGallery(document.querySelector('.faq__textures', {
-      selector: ".faq__texture-img"
-    }))
-
+    lightGallery(document.querySelector('.faq__textures'))
     lightGallery(document.querySelector('.more-gallery'))
+    lightGallery(document.querySelector('.reviews .swiper-wrapper'))
 
-    document.querySelector('.faq__texture-download').addEventListener('click', (e) => {
+    document.querySelectorAll('.faq__texture-download')?.forEach(el => el.addEventListener('click', (e) => {
       e.stopPropagation()
-    })
-    document.querySelector('.faq__texture-more h4').addEventListener('click', (e) => {
+    }))
+    document.querySelectorAll('.faq__texture-more h4')?.forEach(el => el.addEventListener('click', (e) => {
       e.stopPropagation()
-    })
+    }))
+    document.querySelectorAll('.review__desc')?.forEach(el => el.addEventListener('click', (e) => {
+      e.stopPropagation()
+    }))
 });
 

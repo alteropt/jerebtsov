@@ -9,149 +9,150 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div class="header__inner">
-        <a class="header__logo" href="/">
-          <img src="./img/logo.svg" alt="Логотип" width="200px">
-        </a>
-        <nav>
-          <ul class="header__nav">
-            <li><a href="/catalog.html">Каталог</a></li>
-            <li><a href="/info.html">Инфо</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="burger">
-          <span></span>
+  <div style="overflow: hidden; position: relative;">
+    <header>
+      <div class="container">
+        <div class="header__inner">
+          <a class="header__logo" href="/">
+            <img src="./img/logo.svg" alt="Логотип" width="200px">
+          </a>
+          <nav>
+            <ul class="header__nav">
+              <li><a href="/catalog.html">Каталог</a></li>
+              <li><a href="/info.html">Инфо</a></li>
+              <li><a href="/contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <span></span>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section style="padding-top: 20px;">
-    <div class="container">
-      <div class="card swiper">
-        <div class="swiper-wrapper">
-          <video autoplay muted loop class="swiper-slide intro__video">
-            <source src="./img/video.mp4" type="video/mp4">
-          </video>
-          <div class="swiper-slide card__content">
-            <div class="card__img">
-              <img src="./img/card-image.png" alt="Фото товара">
+    <section style="padding-top: 20px;">
+      <div class="intro__video">
+        <video autoplay muted loop class="swiper-slide">
+          <source src="./img/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container">
+        <div class="card swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card__content">
             </div>
-            <div class="card__info">
-              <h2 class="card__title">Детская кроватка Baby&nbsp;Boom</h2>
-              <div class="card__interact">
-                <a href="/*card-name" class="btn">Посмотреть</a>
-                <button class="btn black order-button">Заказать</button>
-                <span class="card__price">от 80 000 р.</span>
+            <div class="swiper-slide card__content">
+              <div class="card__img">
+                <img src="./img/card-image.png" alt="Фото товара">
+              </div>
+              <div class="card__info">
+                <h2 class="card__title">Детская кроватка Baby&nbsp;Boom</h2>
+                <div class="card__interact">
+                  <a href="/*card-name" class="btn">Посмотреть</a>
+                  <button class="btn black order-button">Заказать</button>
+                  <span class="card__price">от 80 000 р.</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card__content">
+              <div class="card__img">
+                <img src="./img/card-image.png" alt="Фото товара">
+              </div>
+              <div class="card__info">
+                <h2 class="card__title">Детская кроватка Baby&nbsp;Boom</h2>
+                <div class="card__interact">
+                  <a href="/*card-name" class="btn">Посмотреть</a>
+                  <button class="btn black order-button">Заказать</button>
+                  <span class="card__price">от 80 000 р.</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card__content">
+              <div class="card__img">
+                <img src="./img/card-image.png" alt="Фото товара">
+              </div>
+              <div class="card__info">
+                <h2 class="card__title">Детская кроватка Baby&nbsp;Boom</h2>
+                <div class="card__interact">
+                  <a href="/*card-name" class="btn">Посмотреть</a>
+                  <button class="btn black order-button">Заказать</button>
+                  <span class="card__price">от 80 000 р.</span>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide card__content">
-            <div class="card__img">
-              <img src="./img/card-image.png" alt="Фото товара">
-            </div>
-            <div class="card__info">
-              <h2 class="card__title">Детская кроватка Baby&nbsp;Boom</h2>
-              <div class="card__interact">
-                <a href="/*card-name" class="btn">Посмотреть</a>
-                <button class="btn black order-button">Заказать</button>
-                <span class="card__price">от 80 000 р.</span>
-              </div>
-            </div>
+          <div class="card__nav">
+            <button class="card-prev"><img src="./img/slider-arrow.png" alt="Вперед"></button>
+            <div class="card-pagination"></div>
+            <button class="card-next"><img src="./img/slider-arrow.png" alt="Назад"></button>
           </div>
-          <div class="swiper-slide card__content">
-            <div class="card__img">
-              <img src="./img/card-image.png" alt="Фото товара">
-            </div>
-            <div class="card__info">
-              <h2 class="card__title">Детская кроватка Baby&nbsp;Boom</h2>
-              <div class="card__interact">
-                <a href="/*card-name" class="btn">Посмотреть</a>
-                <button class="btn black order-button">Заказать</button>
-                <span class="card__price">от 80 000 р.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card__nav">
-          <button class="card-prev"><img src="./img/slider-arrow.png" alt="Вперед"></button>
-          <div class="card-pagination"></div>
-          <button class="card-next"><img src="./img/slider-arrow.png" alt="Назад"></button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <section>
     <h2 class="section-title">Отзывы</h2>
     <div class="swiper reviews">
       <div class="swiper-wrapper">
-        <div class="swiper-slide review">
+        <div class="swiper-slide review" data-src="./img/reviews/1.jpg">
+          <p class="review__desc">Спасибо большое компании @fresq_ru <br/> Всегда безупречный результат</p>
           <div class="review__author">
-            <div class="review__avatar"></div>
+            <div class="review__avatar"><img src="./img/reviews/1.jpg" alt="Фото отзыва"></div>
             <div>
               <h5 class="review__name">@lid.studio</h5>
-              <span class="review__prof">Photographer</span>
             </div>
           </div>
-          <p class="review__desc">Спасибо большое компании @fresq_ru <br/> Всегда безупречный результат</p>
         </div>
-        <div class="swiper-slide review">
+        <div class="swiper-slide review" data-src="./img/reviews/2.jpg">
+          <p class="review__desc">@fresq_ru как всегда чудесны. Качество рисунка на высоте</p>
           <div class="review__author">
-            <div class="review__avatar"></div>
+            <div class="review__avatar"><img src="./img/reviews/2.jpg" alt="Фото отзыва"></div>
             <div>
               <h5 class="review__name">@inga_design</h5>
-              <span class="review__prof">Photographer</span>
             </div>
           </div>
-          <p class="review__desc">@fresq_ru как всегда чудесны. Качество рисунка на высоте</p>
         </div>
-        <div class="swiper-slide review">
+        <div class="swiper-slide review" data-src="./img/reviews/3.jpg">
+          <p class="review__desc">@fresq_ru One love <br/> экстаз у меня выглядит так</p>
           <div class="review__author">
-            <div class="review__avatar"></div>
+            <div class="review__avatar"><img src="./img/reviews/3.jpg" alt="Фото отзыва"></div>
             <div>
               <h5 class="review__name">@duditatyana</h5>
-              <span class="review__prof">Photographer</span>
             </div>
           </div>
-          <p class="review__desc">@fresq_ru One love <br/> экстаз у меня выглядит так</p>
         </div>
-        <div class="swiper-slide review">
+        <div class="swiper-slide review" data-src="./img/reviews/4.jpg">
+          <p class="review__desc">Восхищаюсь! @fresq_ru <br/> Ручная работа - это всегда про энергетику, душу и уникальность</p>
           <div class="review__author">
-            <div class="review__avatar"></div>
+            <div class="review__avatar"><img src="./img/reviews/4.jpg" alt="Фото отзыва"></div>
             <div>
               <h5 class="review__name">@lenapovorova</h5>
-              <span class="review__prof">Photographer</span>
             </div>
           </div>
-          <p class="review__desc">Восхищаюсь! @fresq_ru <br/> Ручная работа - это всегда про энергетику, душу и уникальность</p>
         </div>
-        <div class="swiper-slide review">
-          <div class="review__author">
-            <div class="review__avatar"></div>
-            <div>
-              <h5 class="review__name">Gregory Tabot</h5>
-              <span class="review__prof">Photographer</span>
-            </div>
-          </div>
+        <div class="swiper-slide review" data-src="./img/reviews/5.jpg">
           <p class="review__desc">Спасибо огромное за красоту и качество! Каждый раз сидя за бокалом вина на кухне, любуемся Вашим искусством и прекрасными птичками</p>
-        </div>
-        <div class="swiper-slide review">
           <div class="review__author">
-            <div class="review__avatar"></div>
+            <div class="review__avatar"><img src="./img/reviews/5.jpg" alt="Фото отзыва"></div>
             <div>
               <h5 class="review__name">Gregory Tabot</h5>
-              <span class="review__prof">Photographer</span>
             </div>
           </div>
+        </div>
+        <div class="swiper-slide review" data-src="./img/reviews/6.jpg">
           <p class="review__desc">Если хотите что-то очень стильное, в меру роскошное - загляните к ним на сайт.</p>
+          <div class="review__author">
+            <div class="review__avatar"><img src="./img/reviews/6.jpg" alt="Фото отзыва"></div>
+            <div>
+              <h5 class="review__name">Gregory Tabot</h5>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -174,7 +175,7 @@
         </div>
       </div>
       <div class="publications-brands">
-        <img src="./img/brands.png" alt="Бренды">
+        <img src="./img/photo.jpg" alt="Фото">
       </div>
     </div>
   </section>
@@ -281,6 +282,7 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/script.js" type="module"></script>
 </body>
